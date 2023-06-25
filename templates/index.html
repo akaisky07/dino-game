@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dino Game</title>
+</head>
+<body>
+    <h1>Dino Jump</h1>
+    <form method="post" action="{{ url_for('jump') }}">
+        <input type="text" name="jump" placeholder="Enter jump height">
+        <input type="submit" value="Jump">
+    </form>
+    {% if message %}
+        <p>{{ message }}</p>
+    {% endif %}
+</body>
+</html>
+
